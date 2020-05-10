@@ -20,6 +20,7 @@ class AddTaskViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.init(red: 112/255, green: 171/255, blue: 175/255, alpha: 1)
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     

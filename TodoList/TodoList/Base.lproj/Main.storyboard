@@ -23,10 +23,11 @@
                                     <segment title="Midium"/>
                                     <segment title="Low"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.59999999999999998" green="0.88235294117647056" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C94-Tm-7cd">
                                 <rect key="frame" x="0.0" y="151" width="414" height="745"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="todoCell" id="860-du-cdW">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -34,12 +35,13 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="860-du-cdW" id="1PZ-Ny-PYm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="C94-Tm-7cd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ckr-AH-CSo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C94-Tm-7cd" secondAttribute="trailing" id="Hmm-Lo-kn4"/>
@@ -52,6 +54,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="My Todo list" id="hKi-d5-xYw">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vyi-Gr-7Lk">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <segue destination="di7-0U-5ex" kind="presentation" identifier="addTaskSegue" id="bPu-VF-ZJL"/>
                             </connections>
@@ -81,11 +84,19 @@
                                     <segment title="Medium"/>
                                     <segment title="Low"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.59999999999999998" green="0.88235294119999996" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add task" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hru-zf-tII">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add task" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hru-zf-tII">
                                 <rect key="frame" x="32" y="135" width="350" height="34"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.88235294119999996" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -100,11 +111,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Todo" id="euj-7f-fAl">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="c4T-dQ-7rf">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="cancelButtonClicked:" destination="reO-FX-QRM" id="X4t-tw-x4D"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="CaH-qO-6VL">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="saveButtonClicked:" destination="reO-FX-QRM" id="bg8-eH-Mc8"/>
                             </connections>

@@ -23,7 +23,7 @@ class TaskListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
+        self.view.backgroundColor = UIColor.init(red: 112/255, green: 171/255, blue: 175/255, alpha: 1)
         filteredTaskList.bind(to: todoListTableView.rx.items(cellIdentifier: cellIdentifier , cellType: UITableViewCell.self)) { row, task, cell in
             cell.textLabel?.text = task.title
         }.disposed(by: disposeBag)
