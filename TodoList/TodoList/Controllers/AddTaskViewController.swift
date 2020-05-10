@@ -16,9 +16,7 @@ class AddTaskViewController: UIViewController {
     @IBOutlet weak var takTextField: UITextField!
     
     private var taskSubject =  PublishSubject<Task>()
-    var taskSubjectObservable: Observable<Task> {
-        taskSubject.asObserver()
-    }
+    var taskSubjectObservable: Observable<Task> { taskSubject.asObserver() }
     
     override func viewDidLoad() {
         super.viewDidLoad()

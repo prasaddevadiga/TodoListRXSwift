@@ -23,9 +23,6 @@
                                     <segment title="Midium"/>
                                     <segment title="Low"/>
                                 </segments>
-                                <connections>
-                                    <action selector="priorityValueCahgedWithSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="v0a-fO-Uxl"/>
-                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C94-Tm-7cd">
                                 <rect key="frame" x="0.0" y="151" width="414" height="745"/>
@@ -40,10 +37,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RPu-rF-8KX"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="o3n-ej-puD"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
